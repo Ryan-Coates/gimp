@@ -586,3 +586,121 @@
   100% { opacity: 1; transform: scale(1); }
 }
 .rand-flash { animation: randFlash 0.32s ease forwards; }
+
+/* ===== Encounter Cards ===== */
+.feature-encounters { margin-bottom: 1.5rem; }
+.feature-encounters h3 { margin-bottom: 0.75rem; }
+.encounter-list { display: flex; flex-direction: column; gap: 0.6rem; }
+
+details.encounter-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.encounter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  gap: 0.75rem;
+}
+.encounter-summary::-webkit-details-marker { display: none; }
+.encounter-summary::marker { display: none; }
+
+.encounter-summary-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+  min-width: 0;
+}
+.encounter-name { font-weight: 700; font-size: 1rem; }
+.encounter-meta { font-size: 0.8rem; color: var(--text-muted); }
+
+.encounter-chevron {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+  line-height: 1;
+}
+details.encounter-card[open] .encounter-chevron { transform: rotate(90deg); }
+
+/* ===== Stat Block ===== */
+.stat-block {
+  padding: 1rem 1.25rem 1.25rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg-card);
+}
+.sb-alignment {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 0.35rem;
+}
+.sb-divider {
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.4;
+  margin: 0.6rem 0;
+}
+.sb-row { font-size: 0.875rem; line-height: 1.7; }
+.sb-row b { color: var(--accent); font-style: normal; }
+
+.sb-scores {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.2rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.sb-score-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.sb-score-val {
+  font-size: 0.8rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+.sb-section-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.15rem;
+  margin: 0.75rem 0 0.4rem;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+.sb-trait {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  margin-bottom: 0.4rem;
+}
+.sb-trait b { color: var(--text); }
+.sb-description {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  font-style: italic;
+}
+.sb-narrative {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  padding: 0.75rem 1rem;
+  margin: 0;
+}

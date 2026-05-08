@@ -18,6 +18,7 @@ export function seedDefaults() {
     ...f,
     id: crypto.randomUUID(),
     randomizers: f.randomizers.map((r) => ({ ...r, id: crypto.randomUUID() })),
+    encounters: (f.encounters || []).map((e) => ({ ...e, id: crypto.randomUUID() })),
   }));
 
   localStorage.setItem(
@@ -61,7 +62,8 @@ export function generateId() {
 }
 
 /**
- * @typedef {{ id: string, name: string, icon: string, description: string, content: string, randomizers: Randomizer[] }} Feature
+ * @typedef {{ id: string, name: string, icon: string, description: string, content: string, randomizers: Randomizer[], encounters?: Encounter[] }} Feature
  * @typedef {{ id: string, name: string, items: string[] }} Randomizer
+ * @typedef {{ id: string, name: string, cr: string, xp: number, size: string, type: string, alignment: string, ac: string, hp: string, speed: string, str: number, dex: number, con: number, int: number, wis: number, cha: number, saves?: string, skills?: string, damageImmunities?: string, conditionImmunities?: string, vulnerabilities?: string, resistances?: string, senses: string, languages: string, description?: string, traits?: {name:string,text:string}[], actions?: {name:string,text:string}[], reactions?: {name:string,text:string}[], legendaryActions?: {name:string,text:string}[] }} Encounter
  * @typedef {{ theme: 'dark'|'light', accentColour: string }} Settings
  */

@@ -25,6 +25,271 @@
 export const DEFAULT_FEATURES = [
   {
     id: "",
+    name: "Encounters",
+    icon: "🐉",
+    description: "Monster stat blocks — tap to expand.",
+    content: "",
+    randomizers: [],
+    encounters: [
+      {
+        id: "",
+        name: "Cultist",
+        cr: "1/8", xp: 25,
+        size: "Medium", type: "Humanoid (any race)", alignment: "Any non-good alignment",
+        ac: "12 (leather armor)", hp: "9 (2d8)", speed: "30 ft.",
+        str: 11, dex: 12, con: 10, int: 10, wis: 11, cha: 10,
+        skills: "Deception +2, Religion +2",
+        senses: "Passive Perception 10",
+        languages: "Any one language (usually Common)",
+        description: "Cultists serve a powerful master or patron, worshipping dark powers in secret. They present a normal face in society, concealing their devotion.",
+        narrative: "The figure moves deliberately, robes brushing the stone floor. As they turn to face you, you see the glassy devotion in their eyes — not fear, not curiosity, just the hollow certainty of someone who has given themselves away completely. Their lips are moving in a low, almost inaudible prayer.",
+        traits: [
+          { name: "Dark Devotion", text: "The cultist has advantage on saving throws against being charmed or frightened." }
+        ],
+        actions: [
+          { name: "Scimitar", text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage." }
+        ]
+      },
+      {
+        id: "",
+        name: "Zombie",
+        cr: "1/4", xp: 50,
+        size: "Medium", type: "Undead", alignment: "Neutral Evil",
+        ac: "8", hp: "22 (3d8 + 9)", speed: "20 ft.",
+        str: 13, dex: 6, con: 16, int: 3, wis: 6, cha: 5,
+        saves: "Wis +0",
+        damageImmunities: "Poison",
+        conditionImmunities: "Poisoned",
+        senses: "Darkvision 60 ft., Passive Perception 8",
+        languages: "Understands all languages it knew in life but can't speak",
+        description: "Zombies are the animated corpses of once-living creatures, driven by insatiable hunger and the will of whoever raised them.",
+        narrative: "The smell hits you before you see it — rot and damp stone. A shape lurches from the darkness, limbs moving with no grace but terrible purpose. Its eyes are milky white, its jaw working silently. Whatever this person was, they're long gone.",
+        traits: [
+          { name: "Undead Fortitude", text: "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead." }
+        ],
+        actions: [
+          { name: "Slam", text: "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage." }
+        ]
+      },
+      {
+        id: "",
+        name: "Dwarf Miner (Corrupted)",
+        cr: "1/4", xp: 50,
+        size: "Medium", type: "Humanoid (dwarf)", alignment: "Neutral / Chaotic Evil when corrupted",
+        ac: "12 (hide armor)", hp: "16 (3d8 + 3)", speed: "25 ft.",
+        str: 14, dex: 10, con: 13, int: 10, wis: 11, cha: 8,
+        skills: "Athletics +4, Perception +2",
+        senses: "Darkvision 60 ft., Passive Perception 12",
+        languages: "Common, Dwarvish",
+        description: "Hollows Reach miners. Corrupted versions display blackened veins, blank stares, and unnatural aggression driven by the Deep One's influence.",
+        narrative: "A figure in mine gear emerges from the tunnel ahead — thick arms, a pickaxe dragging sparks across the stone. But something is wrong. The veins running along their neck and hands are black, threaded with something that pulses faintly. Their eyes don't focus on you. They raise the pickaxe without a word.",
+        traits: [
+          { name: "Dwarven Resilience", text: "Advantage on saving throws against poison; resistance to poison damage." },
+          { name: "Stonecunning", text: "Doubles proficiency bonus on Intelligence (History) checks related to the origin of stonework." }
+        ],
+        actions: [
+          { name: "Pickaxe", text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage." },
+          { name: "Light Crossbow", text: "Ranged Weapon Attack: +2 to hit, range 80/320 ft., one target. Hit: 4 (1d8) piercing damage." }
+        ]
+      },
+      {
+        id: "",
+        name: "Ghoul",
+        cr: "1", xp: 200,
+        size: "Medium", type: "Undead", alignment: "Chaotic Evil",
+        ac: "12", hp: "22 (5d8)", speed: "30 ft.",
+        str: 13, dex: 15, con: 10, int: 7, wis: 10, cha: 6,
+        damageImmunities: "Poison",
+        conditionImmunities: "Charmed, Exhaustion, Poisoned",
+        senses: "Darkvision 60 ft., Passive Perception 10",
+        languages: "Common",
+        description: "Ghouls are ravenous undead haunting graveyards and slaughter-sites. Their paralysing claws make them deadly even against armoured opponents.",
+        narrative: "A wet, tearing sound echoes from the shadows before you spot it — crouched low, fingers ending in yellowed nails, head tilting in quick jerks like a dog catching scent. It turns to face you and whatever intelligence was once behind those eyes is entirely absent, replaced by something that only wants.",
+        actions: [
+          { name: "Bite", text: "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage." },
+          { name: "Claws", text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success." }
+        ]
+      },
+      {
+        id: "",
+        name: "Cult Fanatic",
+        cr: "2", xp: 450,
+        size: "Medium", type: "Humanoid (any race)", alignment: "Any non-good alignment",
+        ac: "13 (leather armor)", hp: "33 (6d8 + 6)", speed: "30 ft.",
+        str: 11, dex: 14, con: 12, int: 10, wis: 13, cha: 14,
+        skills: "Deception +4, Persuasion +4, Religion +2",
+        senses: "Passive Perception 11",
+        languages: "Any one language (usually Common)",
+        description: "Deeply corrupted zealots of the Choir of the Deep. Their mutations are visible — blackened veins, extra pupils, hands that end in talon-like growths — but they speak with utter serenity.",
+        narrative: "They step forward with the unhurried confidence of someone who believes they cannot be touched. You notice the veins first — black, branching across their face and hands — and then the eyes: two pupils in each, all fixed on you. Their voice, when they speak, is almost warm. 'You've heard it too, haven't you? The voice from below.'",
+        traits: [
+          { name: "Dark Devotion", text: "Advantage on saving throws against being charmed or frightened." },
+          { name: "Spellcasting", text: "Wis-based (spell save DC 11, +3 to hit). Cantrips (at will): light, sacred flame, thaumaturgy. 1st level (4 slots): command, inflict wounds, shield of faith. 2nd level (3 slots): hold person, spiritual weapon." }
+        ],
+        actions: [
+          { name: "Multiattack", text: "The fanatic makes two Corrupted Claws attacks or one Corrupted Claws and one Dagger." },
+          { name: "Corrupted Claws", text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) slashing damage + 2 (1d4) psychic damage." },
+          { name: "Dagger", text: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 4 (1d4 + 2) piercing damage." },
+          { name: "Psychic Pulse (Recharge 5–6)", text: "All creatures within 10 ft. must make a DC 13 Wisdom saving throw. On a failure, they take 3 (1d6) psychic damage and have disadvantage on their next attack roll." },
+          { name: "Whispers of the Deep (1/Combat)", text: "The fanatic targets one creature it can see within 30 ft. That creature must make a DC 13 Wisdom saving throw or be frightened of the fanatic until the end of its next turn." }
+        ]
+      },
+      {
+        id: "",
+        name: "Bandit Captain",
+        cr: "2", xp: 450,
+        size: "Medium", type: "Humanoid (any race)", alignment: "Any non-lawful alignment",
+        ac: "15 (studded leather)", hp: "65 (10d8 + 20)", speed: "30 ft.",
+        str: 15, dex: 16, con: 14, int: 14, wis: 11, cha: 14,
+        saves: "Str +4, Dex +5, Wis +2",
+        skills: "Athletics +4, Deception +4",
+        senses: "Passive Perception 10",
+        languages: "Any two languages",
+        description: "A ruthless leader who has clawed their way to the top — and made dark pacts to stay there. This captain bears a crude paladin's oath sworn to a fallen ideal, granting them a measure of divine power.",
+        narrative: "The figure at the back of the group hasn't drawn a blade — yet. They're watching you with the calculated patience of someone who has done this many times before. When they finally speak, there's a flicker at their fingertips — not quite firelight, something older. 'This doesn't have to go badly,' they say, already knowing it will.",
+        traits: [
+          { name: "Aura of Command", text: "Friendly creatures within 10 ft. that can see the captain have advantage on saving throws against being frightened." },
+          { name: "Spellcasting (Paladin, Cha-based, DC 12, +4 to hit)", text: "1st level (2 slots): bless, thunderous smite, wrathful smite. 2nd level (1 slot): branding smite, misty step." }
+        ],
+        actions: [
+          { name: "Multiattack", text: "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers." },
+          { name: "Scimitar", text: "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage." },
+          { name: "Dagger", text: "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage." },
+          { name: "Divine Smite (1/Turn)", text: "When the captain hits with a melee attack, it can expend a spell slot to deal an extra 2d8 radiant damage (1st-level slot) or 3d8 (2nd-level slot)." },
+          { name: "Lay on Hands (5 HP/Day)", text: "The captain touches a creature and restores up to 5 HP from a pool that refreshes on a long rest." }
+        ],
+        reactions: [
+          { name: "Parry", text: "The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon." }
+        ]
+      },
+      {
+        id: "",
+        name: "Owlbear",
+        cr: "3", xp: 700,
+        size: "Large", type: "Monstrosity", alignment: "Unaligned",
+        ac: "13 (natural armor)", hp: "59 (7d10 + 21)", speed: "40 ft.",
+        str: 20, dex: 12, con: 17, int: 3, wis: 12, cha: 7,
+        skills: "Perception +3",
+        senses: "Darkvision 60 ft., Passive Perception 13",
+        languages: "—",
+        description: "A territorial predator combining the ferocity of a bear with the keen senses of a great owl. Owlbears are aggressive, unpredictable, and notoriously difficult to drive off.",
+        narrative: "You hear it before you see it — a sound like a screech folded inside a roar, reverberating off the rock walls. Then it emerges from the passage: vast feathered shoulders, a beak like sheared iron, eyes that catch your lanternlight and hold it. It doesn't care why you're here. You're in its tunnel.",
+        traits: [
+          { name: "Keen Sight and Smell", text: "The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell." }
+        ],
+        actions: [
+          { name: "Multiattack", text: "The owlbear makes two attacks: one with its beak and one with its claws." },
+          { name: "Beak", text: "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 10 (1d10 + 5) piercing damage." },
+          { name: "Claws", text: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage." }
+        ]
+      },
+      {
+        id: "",
+        name: "Hooked Horror",
+        cr: "3", xp: 700,
+        size: "Large", type: "Monstrosity", alignment: "Chaotic Neutral",
+        ac: "14 (natural armor + Gemstone Core)", hp: "75 (10d10 + 20)", speed: "30 ft., climb 30 ft.",
+        str: 20, dex: 10, con: 15, int: 4, wis: 12, cha: 5,
+        skills: "Perception +3, Stealth +2",
+        resistances: "Bludgeoning, Piercing, Slashing from nonmagical attacks (Stone-Fused Hide)",
+        senses: "Blindsight 60 ft. (blind beyond this radius), Passive Perception 13",
+        languages: "Hooked Horror (clicks, rattles, and clacks)",
+        description: "Blind Underdark predators corrupted by proximity to the Deep One. A vein of glowing ore runs through their chitin — making them harder, stranger, and more dangerous than their kin above.",
+        narrative: "Silence — and then a sound like two stones struck together, rapid and rhythmic, echoing from above. Something on the ceiling. You can't see them clearly, just shapes clinging to the rock, but you hear the clicks resolve into a pattern that sounds almost like language. The clicking stops. Then something drops.",
+        traits: [
+          { name: "Echolocation", text: "The hooked horror can't use its blindsight while deafened." },
+          { name: "Keen Hearing", text: "The hooked horror has advantage on Wisdom (Perception) checks that rely on hearing." },
+          { name: "Stone-Fused Hide", text: "The horror has resistance to nonmagical bludgeoning, piercing, and slashing damage." },
+          { name: "Gemstone Core", text: "When reduced to 0 HP, the horror explodes in psychic shards. Each creature within 5 ft. must make a DC 13 Dexterity saving throw, taking 2d6 psychic + 2d6 piercing damage on a failure, or half on a success." }
+        ],
+        actions: [
+          { name: "Multiattack", text: "The hooked horror makes two hook attacks." },
+          { name: "Hook", text: "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 5) piercing damage." },
+          { name: "Psychic Echo (Recharge 5–6)", text: "The horror emits a shriek of psychic resonance. Each creature within 15 ft. must make a DC 13 Wisdom saving throw. On a failure, the creature takes 7 (2d6) psychic damage and is deafened until the end of its next turn." }
+        ]
+      },
+      {
+        id: "",
+        name: "Aboleth",
+        cr: "10", xp: 5900,
+        size: "Large", type: "Aberration", alignment: "Lawful Evil",
+        ac: "17 (natural armor)", hp: "68 (9d10 + 18) [weakened — half normal]", speed: "10 ft., swim 40 ft.",
+        str: 21, dex: 9, con: 15, int: 18, wis: 15, cha: 18,
+        saves: "Con +6, Int +8, Wis +6",
+        skills: "History +12, Perception +10",
+        senses: "Darkvision 120 ft., Passive Perception 20",
+        languages: "Deep Speech, telepathy 120 ft.",
+        description: "Aboleths are ancient, immortal beings of incomprehensible intelligence who remember the age before gods. This one has been syphoning power into the cracking seal for decades — it is weakened, but its mind is as vast and predatory as ever.",
+        narrative: "The water is still. Then, from somewhere deep below, a pressure you feel in your back teeth rather than hear. The surface of the pool ripples from beneath. What rises is vast, pale, and ancient — three red eyes surfacing first, then the bulk of it, too large to fully comprehend in the dark. And then, without warning, it is inside your head. Not attacking. Curious. It has been waiting here for a very long time, and it has questions about you.",
+        traits: [
+          { name: "Amphibious", text: "The aboleth can breathe air and water." },
+          { name: "Mucous Cloud", text: "While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or hits it with a melee attack within 5 feet must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater." },
+          { name: "Probing Telepathy", text: "If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature." }
+        ],
+        actions: [
+          { name: "Multiattack", text: "The aboleth makes three tentacle attacks." },
+          { name: "Tentacle", text: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. After 1 minute, the diseased creature's skin becomes translucent and slimy, it can't regain hit points unless underwater, and the disease can only be removed by heal or a disease-curing spell of 6th level or higher." },
+          { name: "Tail", text: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage." },
+          { name: "Enslave (3/Day)", text: "The aboleth targets one creature it can see within 30 feet. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or is on a different plane. The charmed target obeys the aboleth's telepathic commands and can't take reactions." }
+        ],
+        legendaryActions: [
+          { name: "Detect", text: "The aboleth makes a Wisdom (Perception) check." },
+          { name: "Psychic Drain (Costs 2 Actions)", text: "One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage dealt." }
+        ]
+      },
+      {
+        id: "",
+        name: "Shadow",
+        cr: "1/2", xp: 100,
+        size: "Medium", type: "Undead", alignment: "Chaotic Evil",
+        ac: "12", hp: "16 (3d8 + 3)", speed: "40 ft.",
+        str: 6, dex: 14, con: 13, int: 6, wis: 10, cha: 8,
+        skills: "Stealth +4",
+        vulnerabilities: "Radiant",
+        resistances: "Acid, Fire, Lightning, Thunder; Bludgeoning, Piercing, Slashing from nonmagical attacks",
+        damageImmunities: "Cold, Necrotic, Poison",
+        conditionImmunities: "Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained",
+        senses: "Darkvision 60 ft., Passive Perception 10",
+        languages: "—",
+        description: "Shadows are undead born from the souls of those who died in darkness — or who had their soul drained away. In the mine, they coalesce from the ambient corruption. A creature slain by a shadow rises as a new shadow under the Deep One's influence.",
+        narrative: "Your torch dims. Just for a moment — but in that moment you see it: a shape on the wall that has no source. It moves when nothing else does. When your light returns, the shadow is closer than it was, and you realise with cold certainty that it is not cast by anything in this room.",
+        traits: [
+          { name: "Amorphous", text: "The shadow can move through a space as narrow as 1 inch wide without squeezing." },
+          { name: "Shadow Stealth", text: "While in dim light or darkness, the shadow can take the Hide action as a bonus action." },
+          { name: "Sunlight Weakness", text: "While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws." }
+        ],
+        actions: [
+          { name: "Strength Drain", text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later." }
+        ]
+      },
+      {
+        id: "",
+        name: "Dwarf Miner (Non-Corrupted)",
+        cr: "1/4", xp: 50,
+        size: "Medium", type: "Humanoid (dwarf)", alignment: "Lawful Neutral",
+        ac: "12 (hide armor)", hp: "16 (3d8 + 3)", speed: "25 ft.",
+        str: 14, dex: 10, con: 13, int: 10, wis: 11, cha: 9,
+        skills: "Athletics +4, Perception +2",
+        senses: "Darkvision 60 ft., Passive Perception 12",
+        languages: "Common, Dwarvish",
+        description: "Hollows Reach miners who haven't yet succumbed to the Deep One's influence. Frightened, exhausted, and reluctant fighters — but they know the mine tunnels better than anyone. Missing miners found underground can be persuaded to fight alongside the party.",
+        narrative: "From deeper in the tunnel: 'Who's there?! Wardens?' A dwarf steps into the edge of your light, pickaxe raised but shaking. Their eyes are bloodshot, their face smeared with dust and something dried that might be tears. They look at you — really look at you, the way someone does when they're deciding whether to run or beg. 'Are you... are you with the miners? Are you here to get us out?'",
+        traits: [
+          { name: "Dwarven Resilience", text: "Advantage on saving throws against poison; resistance to poison damage." },
+          { name: "Stonecunning", text: "Doubles proficiency bonus on Intelligence (History) checks related to the origin of stonework." },
+          { name: "Mine Knowledge", text: "Advantage on Survival checks while navigating underground tunnels and shafts." }
+        ],
+        actions: [
+          { name: "Pickaxe", text: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage." },
+          { name: "Light Crossbow", text: "Ranged Weapon Attack: +2 to hit, range 80/320 ft., one target. Hit: 4 (1d8) piercing damage." },
+          { name: "Flare (1/Day)", text: "The miner ignites a mining flare. Creatures within 10 ft. that are sensitive to bright light (including shadows) have disadvantage on attacks until the start of the miner's next turn." }
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "",
     name: "Player Characters",
     icon: "🧑‍🤝‍🧑",
     description: "The party — backstories and key traits.",
