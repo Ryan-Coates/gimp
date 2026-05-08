@@ -197,7 +197,130 @@ ZANDER — Charmaine 'The Finisher' Periwinkle
   },
 
   {
-    id: "",    name: "Corruption",
+    id: "",
+    name: "Crits",
+    icon: "🎯",
+    description: "Critical success, failure, and enemy crit tables.",
+    content: `CRITICAL HIT & FAIL TABLES
+==========================
+
+Four tables — use the randomizers on this page.
+
+  Player Critical Success (d20) — something goes spectacularly right.
+  Player Critical Failure (d20) — something goes catastrophically wrong.
+  Enemy Critical Hit (d20)      — the enemy lands a devastating blow.
+  Enemy Critical Fail (d20)     — the enemy embarrasses itself.`,
+    randomizers: [
+      {
+        id: "",
+        name: "Player Critical Success (d20)",
+        items: [
+          "1 — Surge of clarity: gain advantage on your next attack or check.",
+          "2 — Perfect strike: deal an additional d6 damage.",
+          "3 — Swift reflex: avoid all damage from the triggering effect.",
+          "4 — Momentum: take an immediate bonus action.",
+          "5 — Terrifying precision: target makes a WIS save or is frightened.",
+          "6 — Lucky break: an environmental feature helps you (DM decides).",
+          "7 — Chain reaction: hit a second nearby target for half damage.",
+          "8 — Tactical insight: ally within 10 ft gains advantage on their next roll.",
+          "9 — Eldritch resonance: gain 1d6 temporary HP.",
+          "10 — Reality flicker: teleport 5 ft to a safe spot.",
+          "11 — Focused mind: automatically succeed your next concentration check.",
+          "12 — Brutal impact: knock the target prone.",
+          "13 — Surge of strength: +2 to your next STR-based roll.",
+          "14 — Surge of agility: +2 to your next DEX-based roll.",
+          "15 — Surge of will: +2 to your next WIS save.",
+          "16 — Mutation stabilises: if you have a mutation it grants a minor benefit for 1 minute; otherwise gain +1 corruption.",
+          "17 — Echo of the Deep One: gain blindsight 10 ft for 1 minute.",
+          "18 — Eldritch empowerment: next attack deals +1d8 psychic damage.",
+          "19 — Permanent boon (rare): +1 to a single ability check type permanently (e.g. Athletics).",
+          "20 — Permanent mutation-boon (very rare): gain a harmless mutation with a small benefit (DM chooses — e.g. extra eyelid grants advantage vs bright light; bioluminescent veins shed dim light 5 ft)."
+        ]
+      },
+      {
+        id: "",
+        name: "Player Critical Failure (d20)",
+        items: [
+          "1 — Catastrophic blunder: action fails and enemy gains advantage against you until your next turn.",
+          "2 — Permanent maiming (rare): lose a finger, gain a scar, or suffer −1 to a specific check (DM chooses).",
+          "3 — Horrific misfire: hit an ally or yourself (DM chooses).",
+          "4 — Equipment slip: drop your weapon, focus, or held item.",
+          "5 — Stumble: move 5 ft in a random direction.",
+          "6 — Panic: disadvantage on your next attack or check.",
+          "7 — Eldritch backlash: take 1d6 psychic damage.",
+          "8 — Environmental hazard: trigger a nearby trap or collapse.",
+          "9 — Mutation flare: temporary mutation causes disadvantage on your next save.",
+          "10 — Psychic echo: disadvantage on your next WIS save.",
+          "11 — Friendly fire: nearest ally takes half damage.",
+          "12 — Reality tear: lose your next reaction.",
+          "13 — Shaken: frightened of the nearest enemy until end of your next turn.",
+          "14 — Fumble: your next attack deals minimum damage.",
+          "15 — Exhaustion spike: gain 1 level of exhaustion (lasts 10 minutes).",
+          "16 — Eldritch contamination: take 1d4 corruption (DM tracks).",
+          "17 — Mutation surge: gain a temporary mutation (extra eye, twitching limb).",
+          "18 — Deep One's notice: the next enemy attack against you has advantage.",
+          "19 — Permanent mutation (rare): gain a minor unsettling mutation with no mechanical benefit (e.g. blackened veins, translucent skin).",
+          "20 — Permanent deformity (very rare): −1 to a single ability score OR gain a mutation with a drawback (DM chooses)."
+        ]
+      },
+      {
+        id: "",
+        name: "Enemy Critical Hit (d20)",
+        items: [
+          "1 — Glancing Blow: +2 damage.",
+          "2 — Glancing Blow: +2 damage.",
+          "3 — Deep Cut: +1d6 damage.",
+          "4 — Deep Cut: +1d6 damage.",
+          "5 — Brutal Impact: target makes DC 10 CON save or is staggered (disadvantage on next attack).",
+          "6 — Brutal Impact: target makes DC 10 CON save or is staggered (disadvantage on next attack).",
+          "7 — Bleeding Wound: +1d6 damage and target takes 1 bleed damage at start of next turn.",
+          "8 — Bleeding Wound: +1d6 damage and target takes 1 bleed damage at start of next turn.",
+          "9 — Cracked Rib: target makes DC 12 CON save or loses 5 ft movement next turn.",
+          "10 — Cracked Rib: target makes DC 12 CON save or loses 5 ft movement next turn.",
+          "11 — Rattled: target makes DC 12 WIS save or has disadvantage on next saving throw.",
+          "12 — Rattled: target makes DC 12 WIS save or has disadvantage on next saving throw.",
+          "13 — Knocked Off Balance: target makes DC 12 DEX save or is knocked prone.",
+          "14 — Knocked Off Balance: target makes DC 12 DEX save or is knocked prone.",
+          "15 — Armor Break: target's AC is reduced by 1 until repaired or healed.",
+          "16 — Armor Break: target's AC is reduced by 1 until repaired or healed.",
+          "17 — Vicious Strike: +2d6 damage.",
+          "18 — Vicious Strike: +2d6 damage.",
+          "19 — Crippling Blow: target makes DC 14 CON save or loses their bonus action next turn.",
+          "20 — Lethal Precision: max damage + roll again on this table (ignore another 20)."
+        ]
+      },
+      {
+        id: "",
+        name: "Enemy Critical Fail (d20)",
+        items: [
+          "1 — Slip: enemy has disadvantage on their next attack.",
+          "2 — Slip: enemy has disadvantage on their next attack.",
+          "3 — Overextend: target gets advantage on their next attack against this enemy.",
+          "4 — Overextend: target gets advantage on their next attack against this enemy.",
+          "5 — Stumble: enemy loses 5 ft movement next turn.",
+          "6 — Stumble: enemy loses 5 ft movement next turn.",
+          "7 — Drop Guard: enemy's AC is reduced by 1 until the start of its next turn.",
+          "8 — Drop Guard: enemy's AC is reduced by 1 until the start of its next turn.",
+          "9 — Lose Grip: enemy drops its weapon (or loses its next attack if unarmed).",
+          "10 — Lose Grip: enemy drops its weapon (or loses its next attack if unarmed).",
+          "11 — Misjudge Distance: enemy provokes an opportunity attack from the nearest PC.",
+          "12 — Misjudge Distance: enemy provokes an opportunity attack from the nearest PC.",
+          "13 — Self-Harm: enemy deals 1d4 damage to itself.",
+          "14 — Self-Harm: enemy deals 1d4 damage to itself.",
+          "15 — Wild Swing: enemy hits an ally within reach for half damage.",
+          "16 — Wild Swing: enemy hits an ally within reach for half damage.",
+          "17 — Off-Balance: enemy falls prone.",
+          "18 — Off-Balance: enemy falls prone.",
+          "19 — Break Something: enemy takes 1d6 damage and loses its bonus action next turn.",
+          "20 — Catastrophic Failure: enemy is stunned until the end of its next turn."
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "",
+    name: "Corruption",
     icon: "🧬",
     description: "Corruption mechanic — roll d20 + total corruption.",
     content: `CORRUPTION MECHANIC
