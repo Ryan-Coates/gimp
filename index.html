@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="description" content="GIMP — Your D&D Campaign Companion" />
+  <title>GIMP</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-side">
+      <button class="btn-icon back-btn" id="backBtn" aria-label="Go back" hidden>&#8592;</button>
+    </div>
+    <span class="app-title">⚔️ GIMP</span>
+    <div class="header-side header-side--right">
+      <button class="btn-icon" id="themeToggle" aria-label="Toggle theme">☀️</button>
+    </div>
+  </header>
+  <main id="app" class="app-main"></main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

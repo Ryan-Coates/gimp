@@ -1,0 +1,190 @@
+NPC's
+
+Willie Whistletop - Delivery driver who takes you to hallows reach
+
+Durnik Coaljaw - Miner forman
+
+Captain Elira Vance - Warden Captain
+
+
+The 7 dwarves
+
+Grumpy → Grumblejack
+Happy → Merrin
+Sleepy → Drowse
+Doc → Tinkerfoot
+Bashful → Bramble
+Sneezy → Rally
+Dopey → Spryke
+
+
+
+
+
+========================================
+   TOWNSFOLK (1d20)
+========================================
+1  Mara Tallow
+2  Joren Pike
+3  Lysa Bramble
+4  Fenrick Cole
+5  Talla Wint
+6  Orrin Hobb
+7  Sera Dovetail
+8  Brannic Holt
+9  Willa Marn
+10 Darrin Quill
+11 Pella Soot
+12 Thommer Reed
+13 Nessa Vale
+14 Garron Wick
+15 Elma Croft
+16 Ruddon Hayle
+17 Mira Fen
+18 Jasker Lode
+19 Tovin Brack
+20 Hela Moss
+
+========================================
+   DWARVEN MINERS (1d20)
+========================================
+1  Borin Slatejaw
+2  Durgan Emberpick
+3  Marda Ironshank
+4  Rurik Coalbrow
+5  Kelda Deepburrow
+6  Harlik Stonevein
+7  Silda Pickwhisper
+8  Bramm Orebelly
+9  Torla Gravelstride
+10 Korrin Dustbeard
+11 Faldor Hammerlung
+12 Yanna Rockbinder
+13 Thrain Copperhelm
+14 Dorna Flintback
+15 Garrik Tunnelborn
+16 Vilda Oreheart
+17 Bromm Flintgut
+18 Keldor Shalehand
+19 Sarn Coalbreaker
+20 Tessa Gemwhisper
+
+========================================
+   WARDENS / GUARDS (1d20)
+========================================
+1  Captain Elira Vance
+2  Jorren Hale
+3  Sera Kestrel
+4  Bram Varric
+5  Lysa Thorn
+6  Corvin Stroud
+7  Tallen Marr
+8  Ressa Pike
+9  Dorn Halwick
+10 Mira Senn
+11 Karr Holt
+12 Fenna Vale
+13 Jastor Wynn
+14 Pella Strake
+15 Ruddon Karr
+16 Vessa Thornwall
+17 Orric Dane
+18 Toma Varr
+19 Sillan Crowe
+20 Hasker Flint
+
+========================================
+   STRANGE NEWCOMERS (1d20)
+========================================
+1  Eddin Crowcall
+2  Vellin Shade
+3  Mara Quietstep
+4  Orrick Pale
+5  Sella Drift
+6  Dorn Hollow
+7  Tessa Mire
+8  Jasker Still
+9  Venn Blackroot
+10 Hela Murmure
+11 Rook Fenlow
+12 Sarn Holloway
+13 Mira Gloam
+14 Pellin Wraith
+15 Torren Silt
+16 Vassa Mireborn
+17 Orrin Palevein
+18 Talla Shiver
+19 Fenrick Gloom
+20 Sera Nightwhisper
+
+========================================
+   MUTATED / CORRUPTED NPCS (1d20)
+========================================
+1  Tholl the Bent
+2  Mira Three‑Eyes
+3  Garrik Split‑Jaw
+4  Sella the Whispered
+5  Ruddon the Hollow
+6  Vessa the Crooked
+7  Jasker the Pale
+8  Tovin the Shuddering
+9  Hela the Veinlit
+10 Bramm the Twisted
+11 Dorna the Shard‑Skin
+12 Orric the Listener
+13 Sarn the Crawling
+14 Yanna the Echoed
+15 Keldor the Warped
+16 Tessa the Glimmered
+17 Faldor the Bone‑Thin
+18 Vilda the Shifting
+19 Torla the Unbound
+20 The One Who Returned
+
+========================================
+   TRAVELLERS & OUTSIDERS (1d20)
+========================================
+1  Loran Wayfell
+2  Mira Thornstep
+3  Garron Farrow
+4  Sella Driftwood
+5  Orrin Marsh
+6  Vessa Trailwind
+7  Jasker Longstride
+8  Talla Reedfoot
+9  Brannic Wayward
+10 Hela Moorwalker
+11 Ruddon Pike
+12 Sera Fenlow
+13 Dorn Marshlight
+14 Pella Roadstone
+15 Korrin Dustpath
+16 Yanna Hillstride
+17 Faldor Mirewalker
+18 Torla Stonepath
+19 Venn Farshore
+20 Tovin Wander
+
+========================================
+   QUICK TITLES / NICKNAMES (1d20)
+========================================
+1  “the Quiet”
+2  “the Hollow”
+3  “the Bent”
+4  “the Watcher”
+5  “the Pale”
+6  “the Shard”
+7  “the Whispered”
+8  “the Lost”
+9  “the Returned”
+10 “the Crooked”
+11 “the Deep‑Touched”
+12 “the Lantern”
+13 “the Miner’s Ghost”
+14 “the Stone‑Marked”
+15 “the Veinlit”
+16 “the Echoed”
+17 “the Shiver”
+18 “the Still”
+19 “the Gloam”
+20 “the Last”
